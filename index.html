@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NailsByKy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">NailsByKy</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!-- Intégration du JavaScript -->
+     <script>
+        // Script pour le menu hamburger
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    <main>
+
+        <section> 
+            <div class="container">
+                <img class="logonails" src="assets/logobg.png">
+                <h1>
+                    Bienvenue chez Nailsbyky – Sublimez vos ongles !<br>
+                    Découvrez notre univers dédié à la beauté des mains et des ongles.<br>
+                    Du nail art tendance aux soins professionnels, 
+                    nous vous offrons des prestations de qualité pour sublimer votre style.<br>
+                    Explorez notre galerie, réservez vos services
+                    et laissez-nous prendre soin de vous ! ✨💅<br>
+                    📍  Avignon  |  📞  06 02 09 50 37 
+                </h1>
+            </div>  
+        </section> 
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@nailsbyky.xx?_t=ZN-8uSQeF5n2LG&_r=1" target="_blank">
+                <img src="assets/tiktok.png" alt="Tiktok">
+            </a>
+            <a href="#" target="_blank">
+                <img src="assets/whatsapp.png" alt="Whatsapp">
+            </a>
+            <a href="https://www.instagram.com/nailsbyky.x?igsh=YjllaWFoa3gxdzZw" target="_blank">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>

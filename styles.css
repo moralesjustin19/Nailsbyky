@@ -1,0 +1,147 @@
+body {
+    background-image: url('assets/bg.jpg'); /* Chemin de ton image */
+    background-size: cover; /* Ajuste l’image pour couvrir tout l’écran */
+    background-position: center; /* Centre l’image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-attachment: fixed; /* Effet de parallaxe (facultatif) */
+}
+/* Style général de la barre de navigation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ad1b7c;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #b43095;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.container img {
+    margin-top: 5%;
+    margin-left: 45%;
+    width: 10%;
+    height: 10%;
+    
+}
+.container h1 {
+    text-align: center;
+    margin-top: 5%;
+    color: whitesmoke;
+    background-color: black;
+    opacity: 75%;
+}
+/* Style pour le footer */
+footer {
+    background-color: #b43095;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style pour les icônes de réseaux sociaux */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol des icônes */
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+
