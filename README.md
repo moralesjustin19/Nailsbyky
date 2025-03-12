@@ -35,7 +35,7 @@ Le site repose sur les technologies suivantes :
 
 ## 📬 Contact
 
-Si vous avez des questions ou souhaitez contribuer, contactez-nous à [email@example.com](mailto:email@example.com).
+Si vous avez des questions ou souhaitez contribuer, contactez-nous à .
 
 ---
 ✨ Créé avec passion pour un service de manucure élégant et professionnel ! ✨
