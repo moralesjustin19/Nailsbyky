@@ -1,11 +1,31 @@
 body {
     /*background-image: url('assets/bg.jpg'); /* Chemin de ton image */
-    background-color: darksalmon;
+    background-image: url('assets/bg.jpg');
     background-size: cover; /* Ajuste l’image pour couvrir tout l’écran */
     background-position: center; /* Centre l’image */
     background-repeat: no-repeat; /* Empêche la répétition */
     background-attachment: fixed; /* Effet de parallaxe (facultatif) */
 }
+
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-baskerville-regular-italic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
 /* Style général de la barre de navigation */
 * {
     margin: 0;
@@ -101,7 +121,7 @@ header {
 }
 
 .container img {
-    margin-top: 15%;
+    margin-top: 7%;
     margin-bottom: 4%;
     margin-left: 45%;
     width: 8%;
@@ -109,10 +129,11 @@ header {
 }
 .container h2 {
     text-align: center;
-    font-size: 1.4vh;
+    font-size: 2.5vh;
     color: whitesmoke;
     background-color: black;
     opacity: 75%;
+    padding: 2vh;
 }
 /* Style pour le footer */
 footer {
@@ -157,13 +178,17 @@ footer {
 
 /*page contact*/
 
-.contenucontact {
-
-}
 
 .containercontact p {
     text-align: center;
+    font-size: 3vh;
     margin: 20px;
+    color: whitesmoke;
+    text-shadow:
+        -1px -1px 0 #b43095,
+         1px -1px 0 #b43095,
+        -1px  1px 0 #b43095,
+         1px  1px 0 #b43095;
 }
 
 .containercontact h1{
@@ -175,4 +200,84 @@ footer {
     display: flex;
     flex-direction: row;
     margin-bottom: 60px;
+}
+.titrepage {
+    text-align: center;
+    color: whitesmoke;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding: 40px 0 100px 0;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 32px); /* 3 cards par ligne */
+    max-width: calc(33.333% - 32px);
+    min-width: 220px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 24px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+    margin-bottom: 32px;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    margin: 12px 0 8px 0;
+    font-size: 1.3em;
+    color: #ad1b7c;
+}
+
+.card p {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.card button {
+    background: #b43095;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+
+.card button:hover {
+    background: #ad1b7c;
+}
+
+@media (max-width: 1100px) {
+    .card {
+        flex: 1 1 calc(50% - 32px); /* 2 cards par ligne */
+        max-width: calc(50% - 32px);
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        flex: 1 1 100%; /* 1 card par ligne */
+        max-width: 100%;
+    }
 }
